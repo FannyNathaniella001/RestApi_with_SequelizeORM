@@ -1,0 +1,23 @@
+instalar por comando 
+npm init -y 
+npm i express
+npm i dotenv
+
+ORM sequelize 
+https://sequelize.org/docs/v6/getting-started/
+sequelize con el comando 
+npm install --save sequelize
+npm install --save pg pg-hstore # Postgres
+
+crear .gitignore
+colocar /node_modules
+
+carpeta src/cnn/cnn.js
+dentro de cnn.js
+import { Sequelize } from "sequelize";
+export default const sequelize = new Sequelize(
+  'postgres://postgres:root@localhost:5432/curso'
+);
+recordar añadir type:modules en el package.json
+
+Los REST services entregan un .json
